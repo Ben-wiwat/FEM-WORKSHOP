@@ -1,0 +1,35 @@
+### create virtual environment to download packages without interupting local python
+python3 -m pip install --upgrade pip	python3 for Python 3.9.4 (python for Python 3.7.3)
+python3 -m venv venv			FIRST TIME ONLY (create the virtual environment for particular project)
+. venv/Scripts/activate			******activate virtual environment
+deactivate				******deactivate virtual environment
+
+### packages management
+pip freeze				check which packages are installed in the virtual environment
+pip freeze > requirements.txt
+pip install -r requirements.txt		install from requirements.txt file if exist
+
+### SCMO required packages
+pip install -U ipykernel
+pip install numpy
+pip install numpy_financial
+pip install pandas
+pip install scipy
+pip install cvxopt
+pip install matplotlib
+pip install sympy
+pip install statsmodels
+pip install sklearn
+pip install tensorflow
+pip install keras
+
+### add/commit/push to github.com
+git branch				check current branch
+git status              check status (what to add/commit/push)
+git add -A				state changes (not yet commit to repo)
+git commit -m "message"			commit change
+git push				push to repo
+
+### clone/pull 
+git clone https://github.com/Ben-wiwat/SCMO.git
+git pull
